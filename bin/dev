@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+find_free_port() {
+  local port="$1"
+  while lsof -nP -iTCP:"$port" -sTCP:LISTEN >/dev/null 2>&1; do
+    port=$((port + 1))
+  done
+  echo "$port"
+}
+
+bundle check >/dev/null 2>&1 || bundle install --path vendor/bundle
+
+site_port="$(find_free_port "${SITE_PORT:-4000}")"
+livereload_port="$(find_free_port "${LIVERELOAD_PORT:-35729}")"
+
+if [ "$site_port" != "${SITE_PORT:-4000}" ] || [ "$livereload_port" != "${LIVERELOAD_PORT:-35729}" ]; then
+  echo "A default dev port is already in use."
+  echo "Starting Jekyll on http://127.0.0.1:${site_port} with LiveReload port ${livereload_port}."
+fi
+
+bundle exec jekyll serve \
+  --livereload \
+  --livereload_port "$livereload_port" \
+  --host 127.0.0.1 \
+  --port "$site_port"

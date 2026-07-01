@@ -5,3 +5,9 @@ includes:    ./_includes
 collections:
   projects:
     output: true
+
+# 사이트 정보 설정 (구글 검색 노출용)
+title: "Youngdong Jang"                  
+author: "Youngdong Jang"                            
+url: "https://jang-1996.github.io" 
+github_username: "jang-1996"

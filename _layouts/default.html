@@ -5,13 +5,52 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }}</title>
-  <meta name="description" content="Homepage of Youngdong Jang">
-  <meta name="author" content="Youngdong Jang">
+  <title>{{ site.title }} | {{ site.data.main_info.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }} | {{ site.data.main_info.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.data.main_info.profile_pic }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }} | {{ site.data.main_info.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.data.main_info.profile_pic }}">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}{{ site.data.main_info.profile_pic }}",
+      "jobTitle": "{{ site.data.main_info.title }}",
+      "email": "mailto:{{ site.data.main_info.email }}",
+      "affiliation": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Korea University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "UCLA"
+        }
+      ],
+      "sameAs": [
+        "{{ site.data.main_info.google_scholar }}",
+        "{{ site.data.main_info.linkedin }}",
+        "{{ site.data.main_info.github }}"
+      ]
+    }
+  </script>
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -100,7 +139,7 @@
           {{ site.data.main_info.name }}
         </div>
         <div class="four columns">
-          Last updated on April 23, 2022
+          Last updated in September 2026
         </div>
         <div class="four columns">
           <!-- <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">

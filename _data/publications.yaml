@@ -1,22 +1,16 @@
 papers:
-  - title: "Motion Cues from Image-based Point Tracking for LiDAR Scene Flow Estimation"
-    authors: "<b>Youngdong Jang*</b>, Gyeongrok Oh*, Jong Wook Kim, Hyunju Ryu, Hyung-gun Chi, SeungHyeon Kim, Seungryong Kim, Jonghyun Choi, Sangpil Kim"
-    venue: "Pre-print, 2026"
-    paper_pdf: "https://arxiv.org/abs/2605.16922"
-    selected: y
-
   - title: "Training-Free Global Geometric Association for 4D LiDAR Panoptic Segmentation"
     authors: "Gyeongrok Oh, <b>Youngdong Jang</b>, Jonghyun Choi, Suk-Ju Kang, Guang Lin, Sangpil Kim"
     venue: "Pre-print, 2026"
     paper_pdf: "https://arxiv.org/abs/2512.18991"
     selected: y
   
-  - title: "LVMark: Robust Watermark for latent video diffusion models"
-    authors: "<b>Youngdong Jang*</b>, MinHyuk Jang*, JaeHyeok Lee, Feng Yang, Gyeongrok Oh , Jongheon Jeong, Sangpil Kim"
-    venue: "IEEE Transactions on Information Forensics and Security (TIFS)"
-    paper_pdf: "https://ieeexplore.ieee.org/document/11495243"
-    code: "https://github.com/kuai-lab/TIFS26_lvmark"
+  - title: "Motion Cues from Image-based Point Tracking for LiDAR Scene Flow Estimation"
+    authors: "<b>Youngdong Jang*</b>, Gyeongrok Oh*, Jong Wook Kim, Hyunju Ryu, Hyung-gun Chi, SeungHyeon Kim, Seungryong Kim, Jonghyun Choi, Sangpil Kim"
+    venue: "NeurIPS 2026"
+    paper_pdf: "https://arxiv.org/abs/2605.16922"
     selected: y
+
 
   - title: "CompMarkGS: Robust Watermarking for Compression 3D Gaussian Splatting"
     authors: "Sumin In, <b>Youngdong Jang</b>, Utae Jeong, MinHyuk Jang, Hyeongcheol Park, Eunbyung Park, Sangpil Kim"
@@ -33,16 +27,24 @@ papers:
     code: "https://github.com/kuai-lab/cvpr25_3D-GSW"
     selected: y
     
-  - title: "High-quality three-dimensional cartoon avatar reconstruction with Gaussian splatting"
-    authors: "MinHyuk Jang, Jong Wook Kim, <b>Youngdong Jang</b>, Donghyun Kim, Wonseok Roh , InYong Hwang, Guang Lin, Sangpil Kim"
-    venue: "Engineering Applications of Artificial Intelligence (EAAI)"
-    paper_pdf: "https://www.sciencedirect.com/science/article/pii/S0952197625003057"
-    code: "https://github.com/kuai-lab/eaai25_ToonSplat"
-    selected: y
   
   - title: "WateRF: Robust Watermarks in Radiance Fields for Protection of Copyrights"
     authors: "<b>Youngdong Jang</b>, Dong In Lee, MinHyuk Jang, Jong Wook Kim, Feng Yang, Sangpil Kim"
     venue: "CVPR 2024"
     paper_pdf: "https://openaccess.thecvf.com/content/CVPR2024/html/Jang_WateRF_Robust_Watermarks_in_Radiance_Fields_for_Protection_of_Copyrights_CVPR_2024_paper.html"
     code: "https://github.com/kuai-lab/cvpr2024_WateRF"
+    selected: y
+
+  - title: "LVMark: Robust Watermark for latent video diffusion models"
+    authors: "<b>Youngdong Jang*</b>, MinHyuk Jang*, JaeHyeok Lee, Feng Yang, Gyeongrok Oh , Jongheon Jeong, Sangpil Kim"
+    venue: "IEEE Transactions on Information Forensics and Security (TIFS)"
+    paper_pdf: "https://ieeexplore.ieee.org/document/11495243"
+    code: "https://github.com/kuai-lab/TIFS26_lvmark"
+    selected: y
+
+  - title: "High-quality three-dimensional cartoon avatar reconstruction with Gaussian splatting"
+    authors: "MinHyuk Jang, Jong Wook Kim, <b>Youngdong Jang</b>, Donghyun Kim, Wonseok Roh , InYong Hwang, Guang Lin, Sangpil Kim"
+    venue: "Engineering Applications of Artificial Intelligence (EAAI)"
+    paper_pdf: "https://www.sciencedirect.com/science/article/pii/S0952197625003057"
+    code: "https://github.com/kuai-lab/eaai25_ToonSplat"
     selected: y
